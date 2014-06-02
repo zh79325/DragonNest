@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}{\f1\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\lang2052\f0\fs20 0056F195    8DB8 70D2FFFF   lea     edi, dword ptr [eax-2D90]\par
+0056F19B    E8 C0002E00     call    0084F260\par
+0056F1A0    8B4424 14       mov     eax, dword ptr [esp+14]\par
+0056F1A4    8B88 70D2FFFF   mov     ecx, dword ptr [eax-2D90]\par
+0056F1AA    8B51 0C         mov     edx, dword ptr [ecx+C]\par
+0056F1AD    6A 01           push    1\par
+0056F1AF    8DB402 70D2FFFF lea     esi, dword ptr [edx+eax-2D90]\par
+0056F1B6    E8 354CFCFF     call    00533DF0\par
+0056F1BB    8B43 08         mov     eax, dword ptr [ebx+8]\par
+0056F1BE    8DB424 9C000000 lea     esi, dword ptr [esp+9C]\par
+0056F1C5    894424 1C       mov     dword ptr [esp+1C], eax\par
+0056F1C9    E8 4276F1FF     call    00486810\par
+0056F1CE    83B8 F4010000 0>cmp     dword ptr [eax+1F4], 0\par
+0056F1D5    74 07           je      short 0056F1DE\par
+0056F1D7    8B4B 2C         mov     ecx, dword ptr [ebx+2C]\par
+0056F1DA    894C24 1C       mov     dword ptr [esp+1C], ecx\par
+0056F1DE    8B7C24 14       mov     edi, dword ptr [esp+14]\par
+0056F1E2    8B97 70D2FFFF   mov     edx, dword ptr [edi-2D90]\par
+0056F1E8    8B42 04         mov     eax, dword ptr [edx+4]\par
+0056F1EB    8B4C24 1C       mov     ecx, dword ptr [esp+1C]\par
+0056F1EF    8D9438 70D2FFFF lea     edx, dword ptr [eax+edi-2D90]\par
+0056F1F6    E8 B57D4400     call    009B6FB0\par
+0056F1FB    85C0            test    eax, eax\par
+0056F1FD    894424 3C       mov     dword ptr [esp+3C], eax\par
+0056F201    0F84 4B010000   je      0056F352\par
+0056F207    8DB7 F8CFFFFF   lea     esi, dword ptr [edi-3008]\par
+0056F20D    E8 8EB2FDFF     call    0054A4A0\par
+0056F212    84C0            test    al, al\par
+0056F214    74 33           je      short 0056F249\par
+0056F216    D9EE            fldz\par
+0056F218    8B55 10         mov     edx, dword ptr [ebp+10]\par
+0056F21B    51              push    ecx\par
+0056F21C    D91C24          fstp    dword ptr [esp]\par
+0056F21F    8B4D 14         mov     ecx, dword ptr [ebp+14]\par
+0056F222    51              push    ecx\par
+0056F223    8DB7 08D0FFFF   lea     esi, dword ptr [edi-2FF8]\par
+0056F229    52              push    edx\par
+0056F22A    E8 E175F1FF     call    00486810\par
+0056F22F    50              push    eax\par
+0056F230    E8 1BEC0900     call    0060DE50\par
+0056F235    C706 FFFFFFFF   mov     dword ptr [esi], -1\par
+0056F23B    C746 04 FFFFFFF>mov     dword ptr [esi+4], -1\par
+0056F242    C746 08 0000000>mov     dword ptr [esi+8], 0\par
+0056F249    8B4C24 3C       mov     ecx, dword ptr [esp+3C]\par
+0056F24D    8B41 54         mov     eax, dword ptr [ecx+54]\par
+0056F250    2B43 10         sub     eax, dword ptr [ebx+10]\par
+0056F253    83C1 38         add     ecx, 38\par
+0056F256    BE 2063A700     mov     esi, 00A76320                    ; ASCII "Stand"\par
+0056F25B    894424 34       mov     dword ptr [esp+34], eax\par
+0056F25F    894C24 3C       mov     dword ptr [esp+3C], ecx\par
+0056F263    E8 F800FCFF     call    0052F360\par
+0056F268    84C0            test    al, al\par
+0056F26A    74 52           je      short 0056F2BE\par
+0056F26C    8B7424 3C       mov     esi, dword ptr [esp+3C]\par
+0056F270    837E 18 10      cmp     dword ptr [esi+18], 10\par
+0056F274    72 05           jb      short 0056F27B\par
+0056F276    8B46 04         mov     eax, dword ptr [esi+4]\par
+0056F279    EB 03           jmp     short 0056F27E\par
+0056F27B    8D46 04         lea     eax, dword ptr [esi+4]\par
+0056F27E    68 48B1A900     push    00A9B148                         ; ASCII "_Landing"\par
+0056F283    50              push    eax\par
+0056F284    E8 77EB4700     call    009EDE00\par
+0056F289    83C4 08         add     esp, 8\par
+0056F28C    85C0            test    eax, eax\par
+0056F28E    75 2E           jnz     short 0056F2BE\par
+0056F290    837E 18 10      cmp     dword ptr [esi+18], 10\par
+0056F294    72 05           jb      short 0056F29B\par
+0056F296    8B4E 04         mov     ecx, dword ptr [esi+4]\par
+0056F299    EB 03           jmp     short 0056F29E\par
+0056F29B    8D4E 04         lea     ecx, dword ptr [esi+4]\par
+0056F29E    8B87 70D2FFFF   mov     eax, dword ptr [edi-2D90]\par
+0056F2A4    8B50 04         mov     edx, dword ptr [eax+4]\par
+0056F2A7    8D943A 70D2FFFF lea     edx, dword ptr [edx+edi-2D90]\par
+0056F2AE    E8 FD7C4400     call    009B6FB0\par
+0056F2B3    85C0            test    eax, eax\par
+0056F2B5    74 07           je      short 0056F2BE\par
+0056F2B7    8B40 54         mov     eax, dword ptr [eax+54]\par
+0056F2BA    014424 34       add     dword ptr [esp+34], eax\par
+0056F2BE    8B4C24 34       mov     ecx, dword ptr [esp+34]\par
+0056F2C2    DB4424 34       fild    dword ptr [esp+34]\par
+0056F2C6    85C9            test    ecx, ecx\par
+0056F2C8    7D 06           jge     short 0056F2D0\par
+0056F2CA    D805 F89CAD00   fadd    dword ptr [AD9CF8]\par
+0056F2D0    68 006DC000     push    00C06D00\par
+0056F2D5    D95C24 40       fstp    dword ptr [esp+40]\par
+0056F2D9    E8 62C0FAFF     call    0051B340\par
+0056F2DE    D87C24 3C       fdivr   dword ptr [esp+3C]\par
+0056F2E2    8DB424 9C000000 lea     esi, dword ptr [esp+9C]\par
+0056F2E9    D95C24 3C       fstp    dword ptr [esp+3C]\par
+0056F2ED    E8 1E75F1FF     call    00486810\par
+0056F2F2    D94424 3C       fld     dword ptr [esp+3C]\par
+0056F2F6    D998 38030000   fstp    dword ptr [eax+338]\par
+0056F2FC    837B 28 01      cmp     dword ptr [ebx+28], 1\par
+0056F300    0F94C2          sete    dl\par
+0056F303    8897 5CE9FFFF   mov     byte ptr [edi-16A4], dl\par
+0056F309    E8 0275F1FF     call    00486810\par
+0056F30E    DB43 10         fild    dword ptr [ebx+10]\par
+0056F311    8BB7 C8CCFFFF   mov     esi, dword ptr [edi-3338]\par
+0056F317    8B5424 1C       mov     edx, dword ptr [esp+1C]\par
+0056F31B    8D48 20         lea     ecx, dword ptr [eax+20]\par
+0056F31E    81C6 38010000   add     esi, 138\par
+0056F324    837B 24 00      cmp     dword ptr [ebx+24], 0\par
+0056F328    0F95C0          setne   al\par
+0056F32B    50              push    eax\par
+0056F32C    8B01            mov     eax, dword ptr [ecx]\par
+0056F32E    6A 00           push    0\par
+0056F330    6A 00           push    0\par
+0056F332    83EC 08         sub     esp, 8\par
+0056F335    D95C24 04       fstp    dword ptr [esp+4]\par
+0056F339    DB43 0C         fild    dword ptr [ebx+C]\par
+0056F33C    D91C24          fstp    dword ptr [esp]\par
+0056F33F    6A 00           push    0\par
+0056F341    52              push    edx\par
+0056F342    8B50 08         mov     edx, dword ptr [eax+8]\par
+0056F345    FFD2            call    edx\par
+0056F347    50              push    eax\par
+0056F348    8B06            mov     eax, dword ptr [esi]\par
+0056F34A    8D8F C8CCFFFF   lea     ecx, dword ptr [edi-3338]\par
+0056F350    FFD0            call    eax                              ; \'ca\'f3\'b1\'ea\'d3\'d2\'bc\'fc\'bc\'bc\'c4\'dc\par
+0056F352    807C24 1B 00    cmp     byte ptr [esp+1B], 0\par
+0056F357    74 13           je      short 0056F36C\par
+0056F359    0FB60B          movzx   ecx, byte ptr [ebx]\par
+0056F35C    51              push    ecx\par
+0056F35D    81C7 98DAFFFF   add     edi, -2568\par
+0056F363    E8 D8994200     call    00998D40\par
+0056F368    8B7C24 14       mov     edi, dword ptr [esp+14]\par
+0056F36C    8B97 70D2FFFF   mov     edx, dword ptr [edi-2D90]\par
+0056F372    8B42 08         mov     eax, dword ptr [edx+8]\par
+0056F375    F68438 C0E6FFFF>test    byte ptr [eax+edi-1940], 1\par
+0056F37D    8D8438 70D2FFFF lea     eax, dword ptr [eax+edi-2D90]\par
+0056F384    75 17           jnz     short 0056F39D\par
+0056F386    05 68140000     add     eax, 1468\par
+0056F38B    50              push    eax\par
+0056F38C    E8 EF87F1FF     call    00487B80\par
+\par
+\par
+\par
+\par
+\par
+\par
+\lang1033\f1\fs18 push 2EE43000\par
+push 0\par
+push 0\par
+sub esp,8\par
+push 0\par
+push 1CD31E80\par
+push 00000008\par
+mov ecx,1C373CE0\par
+call 00581120\par
+\par
+\lang2052\f0\fs20\par
+\par
+}
+ 

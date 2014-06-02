@@ -1,0 +1,148 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\lang2052\f0\fs20 006D84D4    83C0 FF         add     eax, -1\par
+006D84D7    83F8 1F         cmp     eax, 1F\par
+006D84DA    0F87 7A010000   ja      006D865A\par
+006D84E0    0FB688 94866D00 movzx   ecx, byte ptr [eax+6D8694]\par
+006D84E7    FF248D 78866D00 jmp     dword ptr [ecx*4+6D8678]\par
+006D84EE    BE E86DB900     mov     esi, 00B96DE8\par
+006D84F3    E8 7898D2FF     call    00401D70\par
+006D84F8    85C0            test    eax, eax\par
+006D84FA    74 43           je      short 006D853F\par
+006D84FC    E8 CF98D2FF     call    00401DD0\par
+006D8501    8B10            mov     edx, dword ptr [eax]\par
+006D8503    8BC8            mov     ecx, eax\par
+006D8505    8B82 FC000000   mov     eax, dword ptr [edx+FC]\par
+006D850B    FFD0            call    eax\par
+006D850D    84C0            test    al, al\par
+006D850F    74 2E           je      short 006D853F\par
+006D8511    8B0D F06DB900   mov     ecx, dword ptr [B96DF0]\par
+006D8517    6A 00           push    0\par
+006D8519    68 4873B900     push    00B97348\par
+006D851E    68 3073B900     push    00B97330\par
+006D8523    6A 00           push    0\par
+006D8525    51              push    ecx\par
+006D8526    E8 82513100     call    009ED6AD\par
+006D852B    83C4 14         add     esp, 14\par
+006D852E    85C0            test    eax, eax\par
+006D8530    74 0D           je      short 006D853F\par
+006D8532    80B8 380D0000 0>cmp     byte ptr [eax+D38], 0\par
+006D8539    0F85 1B010000   jnz     006D865A\par
+006D853F    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D8542    72 10           jb      short 006D8554\par
+006D8544    8B5B 04         mov     ebx, dword ptr [ebx+4]           ; \'b6\'d1\'d5\'bb ds:[0012E4F0]=3092BC98, (UNICODE "hhhhhhhhh")\par
+006D8547    6A 00           push    0\par
+006D8549    6A 00           push    0\par
+006D854B    6A 01           push    1                                ; \'d5\'e2\'b6\'f9\'c8\'fd\'b8\'f6push\'ce\'aa\'d3\'d0\'d3\'c3\'b5\'c4\'b2\'ce\'ca\'fd\par
+006D854D    8BF3            mov     esi, ebx\par
+006D854F    E9 FE000000     jmp     006D8652\par
+006D8554    6A 00           push    0\par
+006D8556    83C3 04         add     ebx, 4\par
+006D8559    6A 00           push    0\par
+006D855B    6A 01           push    1\par
+006D855D    8BF3            mov     esi, ebx\par
+006D855F    E9 EE000000     jmp     006D8652\par
+006D8564    837E 14 00      cmp     dword ptr [esi+14], 0\par
+006D8568    0F84 EC000000   je      006D865A\par
+006D856E    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D8571    8D6B 04         lea     ebp, dword ptr [ebx+4]\par
+006D8574    72 05           jb      short 006D857B\par
+006D8576    8B4D 00         mov     ecx, dword ptr [ebp]\par
+006D8579    EB 02           jmp     short 006D857D\par
+006D857B    8BCD            mov     ecx, ebp\par
+006D857D    837E 18 08      cmp     dword ptr [esi+18], 8\par
+006D8581    72 08           jb      short 006D858B\par
+006D8583    8B46 04         mov     eax, dword ptr [esi+4]\par
+006D8586    83C6 04         add     esi, 4\par
+006D8589    EB 05           jmp     short 006D8590\par
+006D858B    83C6 04         add     esi, 4\par
+006D858E    8BC6            mov     eax, esi\par
+006D8590    50              push    eax\par
+006D8591    6A 08           push    8\par
+006D8593    E8 A80B0000     call    006D9140\par
+006D8598    B8 08000000     mov     eax, 8\par
+006D859D    3943 18         cmp     dword ptr [ebx+18], eax\par
+006D85A0    72 03           jb      short 006D85A5\par
+006D85A2    8B6D 00         mov     ebp, dword ptr [ebp]\par
+006D85A5    8B5424 14       mov     edx, dword ptr [esp+14]\par
+006D85A9    3942 18         cmp     dword ptr [edx+18], eax\par
+006D85AC    72 0E           jb      short 006D85BC\par
+006D85AE    8B0E            mov     ecx, dword ptr [esi]\par
+006D85B0    8BF5            mov     esi, ebp\par
+006D85B2    E8 09C1FFFF     call    006D46C0\par
+006D85B7    E9 9E000000     jmp     006D865A\par
+006D85BC    8BCE            mov     ecx, esi\par
+006D85BE    8BF5            mov     esi, ebp\par
+006D85C0    E8 FBC0FFFF     call    006D46C0\par
+006D85C5    E9 90000000     jmp     006D865A\par
+006D85CA    80BF E6040000 0>cmp     byte ptr [edi+4E6], 0\par
+006D85D1    74 1B           je      short 006D85EE\par
+006D85D3    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D85D6    72 0B           jb      short 006D85E3\par
+006D85D8    8B73 04         mov     esi, dword ptr [ebx+4]\par
+006D85DB    6A 00           push    0\par
+006D85DD    6A 00           push    0\par
+006D85DF    6A 09           push    9\par
+006D85E1    EB 6F           jmp     short 006D8652\par
+006D85E3    6A 00           push    0\par
+006D85E5    6A 00           push    0\par
+006D85E7    8D73 04         lea     esi, dword ptr [ebx+4]\par
+006D85EA    6A 09           push    9\par
+006D85EC    EB 64           jmp     short 006D8652\par
+006D85EE    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D85F1    72 0B           jb      short 006D85FE\par
+006D85F3    8B73 04         mov     esi, dword ptr [ebx+4]\par
+006D85F6    6A 00           push    0\par
+006D85F8    6A 00           push    0\par
+006D85FA    6A 02           push    2\par
+006D85FC    EB 54           jmp     short 006D8652\par
+006D85FE    6A 00           push    0\par
+006D8600    6A 00           push    0\par
+006D8602    8D73 04         lea     esi, dword ptr [ebx+4]\par
+006D8605    6A 02           push    2\par
+006D8607    EB 49           jmp     short 006D8652\par
+006D8609    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D860C    72 0B           jb      short 006D8619\par
+006D860E    8B73 04         mov     esi, dword ptr [ebx+4]\par
+006D8611    6A 00           push    0\par
+006D8613    6A 00           push    0\par
+006D8615    6A 04           push    4\par
+006D8617    EB 39           jmp     short 006D8652\par
+006D8619    6A 00           push    0\par
+006D861B    6A 00           push    0\par
+006D861D    8D73 04         lea     esi, dword ptr [ebx+4]\par
+006D8620    6A 04           push    4\par
+006D8622    EB 2E           jmp     short 006D8652\par
+006D8624    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D8627    72 0B           jb      short 006D8634\par
+006D8629    8B73 04         mov     esi, dword ptr [ebx+4]\par
+006D862C    6A 00           push    0\par
+006D862E    6A 00           push    0\par
+006D8630    6A 05           push    5\par
+006D8632    EB 1E           jmp     short 006D8652\par
+006D8634    6A 00           push    0\par
+006D8636    6A 00           push    0\par
+006D8638    8D73 04         lea     esi, dword ptr [ebx+4]\par
+006D863B    6A 05           push    5\par
+006D863D    EB 13           jmp     short 006D8652\par
+006D863F    396B 18         cmp     dword ptr [ebx+18], ebp\par
+006D8642    72 05           jb      short 006D8649\par
+006D8644    8B73 04         mov     esi, dword ptr [ebx+4]\par
+006D8647    EB 03           jmp     short 006D864C\par
+006D8649    8D73 04         lea     esi, dword ptr [ebx+4]\par
+006D864C    6A 00           push    0\par
+006D864E    6A 00           push    0\par
+006D8650    6A 07           push    7                                ; \'d5\'e2\'c8\'fd\'b8\'f6\'ba\'f6\'d3\'c6\'c8\'cb\'b5\'c4\'b2\'ce\'ca\'fd\par
+006D8652    E8 D989D2FF     call    00401030                         ; \'ba\'b0\'bb\'b0call\par
+006D8657    83C4 0C         add     esp, 0C\par
+006D865A    8B8C24 1C020000 mov     ecx, dword ptr [esp+21C]\par
+006D8661    5F              pop     edi\par
+006D8662    5E              pop     esi\par
+006D8663    5D              pop     ebp\par
+006D8664    5B              pop     ebx\par
+006D8665    33CC            xor     ecx, esp\par
+006D8667    E8 62473100     call    009ECDCE\par
+006D866C    81C4 14020000   add     esp, 214\par
+006D8672    C2 0800         retn    8\par
+\par
+}
+ 

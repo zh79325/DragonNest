@@ -1,0 +1,270 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}{\f1\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\lang2052\f0\fs20 007A6D40    55              push    ebp\par
+007A6D41    8BEC            mov     ebp, esp\par
+007A6D43    83E4 F8         and     esp, FFFFFFF8\par
+007A6D46    83EC 1C         sub     esp, 1C\par
+007A6D49    8B45 14         mov     eax, dword ptr [ebp+14]\par
+007A6D4C    8B55 08         mov     edx, dword ptr [ebp+8]\par
+007A6D4F    53              push    ebx\par
+007A6D50    56              push    esi\par
+007A6D51    57              push    edi\par
+007A6D52    8B7D 10         mov     edi, dword ptr [ebp+10]\par
+007A6D55    50              push    eax\par
+007A6D56    8BF1            mov     esi, ecx\par
+007A6D58    8B4D 0C         mov     ecx, dword ptr [ebp+C]\par
+007A6D5B    57              push    edi\par
+007A6D5C    51              push    ecx\par
+007A6D5D    52              push    edx\par
+007A6D5E    8BCE            mov     ecx, esi\par
+007A6D60    897424 1C       mov     dword ptr [esp+1C], esi\par
+007A6D64    E8 F74D0D00     call    0087BB60\par
+007A6D69    8D5F 70         lea     ebx, dword ptr [edi+70]\par
+007A6D6C    8BC3            mov     eax, ebx\par
+007A6D6E    8D50 01         lea     edx, dword ptr [eax+1]\par
+007A6D71    8A08            mov     cl, byte ptr [eax]\par
+007A6D73    83C0 01         add     eax, 1\par
+007A6D76    84C9            test    cl, cl\par
+007A6D78  ^ 75 F7           jnz     short 007A6D71\par
+007A6D7A    2BC2            sub     eax, edx\par
+007A6D7C    50              push    eax\par
+007A6D7D    53              push    ebx\par
+007A6D7E    8D8E FC020000   lea     ecx, dword ptr [esi+2FC]\par
+007A6D84    E8 C7E2C5FF     call    00405050\par
+007A6D89    817D 08 0101000>cmp     dword ptr [ebp+8], 101\par
+007A6D90    0F85 59050000   jnz     007A72EF\par
+007A6D96    8B45 14         mov     eax, dword ptr [ebp+14]\par
+007A6D99    2D 00010000     sub     eax, 100\par
+007A6D9E    74 14           je      short 007A6DB4\par
+007A6DA0    2D 01010000     sub     eax, 101\par
+007A6DA5    0F84 AB000000   je      007A6E56\par
+007A6DAB    83E8 04         sub     eax, 4\par
+007A6DAE    0F85 3B050000   jnz     007A72EF\par
+007A6DB4    A1 F06DB900     mov     eax, dword ptr [B96DF0]\par
+007A6DB9    85C0            test    eax, eax\par
+007A6DBB    0F84 2E050000   je      007A72EF\par
+007A6DC1    8B0D E86DB900   mov     ecx, dword ptr [B96DE8]\par
+007A6DC7    50              push    eax\par
+007A6DC8    A1 EC6DB900     mov     eax, dword ptr [B96DEC]\par
+007A6DCD    50              push    eax\par
+007A6DCE    51              push    ecx\par
+007A6DCF    E8 8CB5C5FF     call    00402360\par
+007A6DD4    83C4 0C         add     esp, 0C\par
+007A6DD7    84C0            test    al, al\par
+007A6DD9    0F84 10050000   je      007A72EF\par
+007A6DDF    E8 3C05DDFF     call    00577320\par
+007A6DE4    84C0            test    al, al\par
+007A6DE6    0F85 03050000   jnz     007A72EF\par
+007A6DEC    83BF 84020000 1>cmp     dword ptr [edi+284], 1B\par
+007A6DF3    8BDF            mov     ebx, edi\par
+007A6DF5    0F85 3D020000   jnz     007A7038\par
+007A6DFB    83BF 90020000 0>cmp     dword ptr [edi+290], 0\par
+007A6E02    0F85 30020000   jnz     007A7038\par
+007A6E08    8D86 D0030000   lea     eax, dword ptr [esi+3D0]\par
+007A6E0E    E8 2DE4D6FF     call    00515240\par
+007A6E13    3986 F0030000   cmp     dword ptr [esi+3F0], eax\par
+007A6E19    0F85 19020000   jnz     007A7038\par
+007A6E1F    8D9E E8030000   lea     ebx, dword ptr [esi+3E8]\par
+007A6E25    8D5424 10       lea     edx, dword ptr [esp+10]\par
+007A6E29    8BC3            mov     eax, ebx\par
+007A6E2B    897C24 10       mov     dword ptr [esp+10], edi\par
+007A6E2F    E8 CC110000     call    007A8000\par
+007A6E34    8B00            mov     eax, dword ptr [eax]\par
+007A6E36    8078 05 00      cmp     byte ptr [eax+5], 0\par
+007A6E3A    0F84 F6010000   je      007A7036\par
+007A6E40    8D5424 10       lea     edx, dword ptr [esp+10]\par
+007A6E44    8BC3            mov     eax, ebx\par
+007A6E46    897C24 10       mov     dword ptr [esp+10], edi\par
+007A6E4A    E8 B1110000     call    007A8000\par
+007A6E4F    8B18            mov     ebx, dword ptr [eax]\par
+007A6E51    E9 E2010000     jmp     007A7038\par
+007A6E56    68 141EAC00     push    00AC1E14                         ; ASCII "ID_QUICKSLOT"\par
+007A6E5B    53              push    ebx\par
+007A6E5C    E8 9F6F2400     call    009EDE00\par
+007A6E61    83C4 08         add     esp, 8\par
+007A6E64    85C0            test    eax, eax\par
+007A6E66    0F84 83040000   je      007A72EF\par
+007A6E6C    8B1D 8466C000   mov     ebx, dword ptr [C06684]\par
+007A6E72    85DB            test    ebx, ebx\par
+007A6E74    75 63           jnz     short 007A6ED9\par
+007A6E76    399F 90020000   cmp     dword ptr [edi+290], ebx\par
+007A6E7C    0F84 6D040000   je      007A72EF\par
+007A6E82    8BF7            mov     esi, edi\par
+007A6E84    E8 A7CAECFF     call    00673930\par
+007A6E89    8B8F D4020000   mov     ecx, dword ptr [edi+2D4]\par
+007A6E8F    85C9            test    ecx, ecx\par
+007A6E91    8987 D8020000   mov     dword ptr [edi+2D8], eax\par
+007A6E97    7E 08           jle     short 007A6EA1\par
+007A6E99    2BC8            sub     ecx, eax\par
+007A6E9B    898F D4020000   mov     dword ptr [edi+2D4], ecx\par
+007A6EA1    E8 8A2B0E00     call    00889A30\par
+007A6EA6    8BBF 98020000   mov     edi, dword ptr [edi+298]\par
+007A6EAC    85FF            test    edi, edi\par
+007A6EAE    74 0C           je      short 007A6EBC\par
+007A6EB0    83C7 FD         add     edi, -3\par
+007A6EB3    83FF 01         cmp     edi, 1\par
+007A6EB6    0F87 33040000   ja      007A72EF\par
+007A6EBC    8B4424 0C       mov     eax, dword ptr [esp+C]\par
+007A6EC0    8B80 E4030000   mov     eax, dword ptr [eax+3E4]\par
+007A6EC6    83F8 FF         cmp     eax, -1\par
+007A6EC9    0F84 20040000   je      007A72EF\par
+007A6ECF    6A 00           push    0\par
+007A6ED1    6A 00           push    0\par
+007A6ED3    50              push    eax\par
+007A6ED4    E9 3E010000     jmp     007A7017\par
+007A6ED9    3BDF            cmp     ebx, edi\par
+007A6EDB    75 4C           jnz     short 007A6F29\par
+007A6EDD    8BF3            mov     esi, ebx\par
+007A6EDF    E8 4CCAECFF     call    00673930\par
+007A6EE4    33C9            xor     ecx, ecx\par
+007A6EE6    8983 D4020000   mov     dword ptr [ebx+2D4], eax\par
+007A6EEC    898B D8020000   mov     dword ptr [ebx+2D8], ecx\par
+007A6EF2    8B9B 98020000   mov     ebx, dword ptr [ebx+298]\par
+007A6EF8    3BD9            cmp     ebx, ecx\par
+007A6EFA    890D 8466C000   mov     dword ptr [C06684], ecx\par
+007A6F00    74 0C           je      short 007A6F0E\par
+007A6F02    83C3 FD         add     ebx, -3\par
+007A6F05    83FB 01         cmp     ebx, 1\par
+007A6F08    0F87 E1030000   ja      007A72EF\par
+007A6F0E    8B4424 0C       mov     eax, dword ptr [esp+C]\par
+007A6F12    8B80 E4030000   mov     eax, dword ptr [eax+3E4]\par
+007A6F18    83F8 FF         cmp     eax, -1\par
+007A6F1B    0F84 CE030000   je      007A72EF\par
+007A6F21    51              push    ecx\par
+007A6F22    51              push    ecx\par
+007A6F23    50              push    eax\par
+007A6F24    E9 EE000000     jmp     007A7017\par
+007A6F29    8B8B 84020000   mov     ecx, dword ptr [ebx+284]\par
+007A6F2F    8D41 FB         lea     eax, dword ptr [ecx-5]\par
+007A6F32    83F8 21         cmp     eax, 21\par
+007A6F35    0F87 B4030000   ja      007A72EF\par
+007A6F3B    0FB680 40737A00 movzx   eax, byte ptr [eax+7A7340]\par
+007A6F42    FF2485 30737A00 jmp     dword ptr [eax*4+7A7330]\par
+007A6F49    8B83 90020000   mov     eax, dword ptr [ebx+290]\par
+007A6F4F    33D2            xor     edx, edx\par
+007A6F51    83F9 19         cmp     ecx, 19\par
+007A6F54    0F95C2          setne   dl\par
+007A6F57    6A 01           push    1\par
+007A6F59    51              push    ecx\par
+007A6F5A    83C2 03         add     edx, 3\par
+007A6F5D    52              push    edx\par
+007A6F5E    50              push    eax\par
+007A6F5F    E8 CC090000     call    007A7930\par
+007A6F64    83C4 04         add     esp, 4\par
+007A6F67    56              push    esi\par
+007A6F68    E8 330B0000     call    007A7AA0\par
+007A6F6D    57              push    edi\par
+007A6F6E    53              push    ebx\par
+007A6F6F    56              push    esi\par
+007A6F70    E8 AB050000     call    007A7520\par
+007A6F75    8BB6 E0030000   mov     esi, dword ptr [esi+3E0]\par
+007A6F7B    83FE FF         cmp     esi, -1\par
+007A6F7E    0F84 6B030000   je      007A72EF\par
+007A6F84    8B0D 98C8C000   mov     ecx, dword ptr [C0C898]\par
+007A6F8A    6A 00           push    0\par
+007A6F8C    6A 00           push    0\par
+007A6F8E    56              push    esi\par
+007A6F8F    8D4424 24       lea     eax, dword ptr [esp+24]\par
+007A6F93    50              push    eax\par
+007A6F94    51              push    ecx\par
+007A6F95    B9 9C6FA700     mov     ecx, 00A76F9C                    ; ASCII "2D"\par
+007A6F9A    E8 71DC0B00     call    00864C10\par
+007A6F9F    5F              pop     edi\par
+007A6FA0    5E              pop     esi\par
+007A6FA1    5B              pop     ebx\par
+007A6FA2    8BE5            mov     esp, ebp\par
+007A6FA4    5D              pop     ebp\par
+007A6FA5    C2 1000         retn    10\par
+007A6FA8    8B83 90020000   mov     eax, dword ptr [ebx+290]\par
+007A6FAE    6A 01           push    1\par
+007A6FB0    51              push    ecx\par
+007A6FB1    6A 00           push    0\par
+007A6FB3    50              push    eax\par
+007A6FB4    E8 77090000     call    007A7930\par
+007A6FB9    83C4 04         add     esp, 4\par
+007A6FBC    56              push    esi\par
+007A6FBD    E8 DE0A0000     call    007A7AA0\par
+007A6FC2    57              push    edi\par
+007A6FC3    53              push    ebx\par
+007A6FC4    56              push    esi\par
+007A6FC5    E8 56050000     call    007A7520\par
+007A6FCA    8BB6 E0030000   mov     esi, dword ptr [esi+3E0]\par
+007A6FD0    83FE FF         cmp     esi, -1\par
+007A6FD3    0F84 16030000   je      007A72EF\par
+007A6FD9    A1 98C8C000     mov     eax, dword ptr [C0C898]\par
+007A6FDE    6A 00           push    0\par
+007A6FE0    6A 00           push    0\par
+007A6FE2    56              push    esi\par
+007A6FE3    8D5424 24       lea     edx, dword ptr [esp+24]\par
+007A6FE7    52              push    edx\par
+007A6FE8    50              push    eax\par
+007A6FE9    B9 9C6FA700     mov     ecx, 00A76F9C                    ; ASCII "2D"\par
+007A6FEE    E8 1DDC0B00     call    00864C10\par
+007A6FF3    5F              pop     edi\par
+007A6FF4    5E              pop     esi\par
+007A6FF5    5B              pop     ebx\par
+007A6FF6    8BE5            mov     esp, ebp\par
+007A6FF8    5D              pop     ebp\par
+007A6FF9    C2 1000         retn    10\par
+007A6FFC    53              push    ebx\par
+007A6FFD    56              push    esi\par
+007A6FFE    E8 FD0B0000     call    007A7C00\par
+007A7003    8BB6 E0030000   mov     esi, dword ptr [esi+3E0]\par
+007A7009    83FE FF         cmp     esi, -1\par
+007A700C    0F84 DD020000   je      007A72EF\par
+007A7012    6A 00           push    0\par
+007A7014    6A 00           push    0\par
+007A7016    56              push    esi\par
+007A7017    8B15 98C8C000   mov     edx, dword ptr [C0C898]\par
+007A701D    8D4C24 24       lea     ecx, dword ptr [esp+24]\par
+007A7021    51              push    ecx\par
+007A7022    52              push    edx\par
+007A7023    B9 9C6FA700     mov     ecx, 00A76F9C                    ; ASCII "2D"\par
+007A7028    E8 E3DB0B00     call    00864C10\par
+007A702D    5F              pop     edi\par
+007A702E    5E              pop     esi\par
+007A702F    5B              pop     ebx\par
+007A7030    8BE5            mov     esp, ebp\par
+007A7032    5D              pop     ebp\par
+007A7033    C2 1000         retn    10\par
+007A7036    8BDF            mov     ebx, edi\par
+007A7038    8B8B 90020000   mov     ecx, dword ptr [ebx+290]\par
+007A703E    85C9            test    ecx, ecx\par
+007A7040    0F84 A9020000   je      007A72EF\par
+007A7046    8B83 84020000   mov     eax, dword ptr [ebx+284]\par
+007A704C    83F8 1B         cmp     eax, 1B\par
+007A704F    75 40           jnz     short 007A7091\par
+007A7051    8B9B 98020000   mov     ebx, dword ptr [ebx+298]\par
+007A7057    83EB 03         sub     ebx, 3\par
+007A705A    74 1E           je      short 007A707A\par
+007A705C    83EB 01         sub     ebx, 1\par
+007A705F    0F85 8A020000   jnz     007A72EF\par
+007A7065    8B3D 04C9C000   mov     edi, dword ptr [C0C904]\par
+007A706B    51              push    ecx\par
+007A706C    E8 1FECD0FF     call    004B5C90\par
+007A7071    5F              pop     edi\par
+007A7072    5E              pop     esi\par
+007A7073    5B              pop     ebx\par
+007A7074    8BE5            mov     esp, ebp\par
+007A7076    5D              pop     ebp\par
+007A7077    C2 1000         retn    10\par
+007A707A    6A 00           push    0\par
+007A707C    51              push    ecx\par
+007A707D    8B0D 14C9C000   mov     ecx, dword ptr [C0C914]\par
+007A7083    E8 D898D2FF     call    004D0960                         ; \'b1\'ed\'c7\'e9call\par
+007A7088    5F              pop     edi\par
+007A7089    5E              pop     esi\par
+007A708A    5B              pop     ebx\par
+007A708B    8BE5            mov     esp, ebp\par
+007A708D    5D              pop     ebp\par
+007A708E    C2 1000         retn    10\par
+\par
+\par
+\par
+\par
+\par
+\pard\lang1033\f1\fs18 push 2\par
+push 2\par
+mov     ecx, dword ptr [0C0C914]\par
+\pard call    004D0960\lang2052\f0\fs20\par
+}
+ 

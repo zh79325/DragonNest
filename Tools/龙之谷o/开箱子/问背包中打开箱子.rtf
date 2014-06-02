@@ -1,0 +1,153 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}{\f1\fswiss\fcharset0 Arial;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\lang2052\f0\fs20 00673090    56              push    esi\par
+00673091    8BF1            mov     esi, ecx\par
+00673093    807E 04 00      cmp     byte ptr [esi+4], 0\par
+00673097    0F84 98010000   je      00673235\par
+0067309D    807E 05 00      cmp     byte ptr [esi+5], 0\par
+006730A1    0F84 8E010000   je      00673235\par
+006730A7    D94424 10       fld     dword ptr [esp+10]\par
+006730AB    57              push    edi\par
+006730AC    8B7C24 0C       mov     edi, dword ptr [esp+C]\par
+006730B0    D94424 10       fld     dword ptr [esp+10]\par
+006730B4    8D87 00FEFFFF   lea     eax, dword ptr [edi-200]\par
+006730BA    83F8 05         cmp     eax, 5\par
+006730BD    0F87 10010000   ja      006731D3\par
+006730C3    FF2485 3C326700 jmp     dword ptr [eax*4+67323C]\par
+006730CA    8B06            mov     eax, dword ptr [esi]\par
+006730CC    D9C9            fxch    st(1)\par
+006730CE    8B90 84000000   mov     edx, dword ptr [eax+84]\par
+006730D4    83EC 08         sub     esp, 8\par
+006730D7    D95C24 04       fstp    dword ptr [esp+4]\par
+006730DB    D91C24          fstp    dword ptr [esp]\par
+006730DE    FFD2            call    edx\par
+006730E0    84C0            test    al, al\par
+006730E2    0F84 85000000   je      0067316D\par
+006730E8    807E 06 00      cmp     byte ptr [esi+6], 0\par
+006730EC    75 07           jnz     short 006730F5\par
+006730EE    8BC6            mov     eax, esi\par
+006730F0    E8 0B762000     call    0087A700\par
+006730F5    F64424 18 04    test    byte ptr [esp+18], 4\par
+006730FA    74 03           je      short 006730FF\par
+006730FC    83CF 10         or      edi, 10\par
+006730FF    8B8E 34010000   mov     ecx, dword ptr [esi+134]         ; ds:[2D260A5C]=2D260420  esi== 2D260928\par
+00673105    8B01            mov     eax, dword ptr [ecx]\par
+00673107    8B50 44         mov     edx, dword ptr [eax+44]\par
+0067310A    57              push    edi                              ; edi=00000205\par
+0067310B    56              push    esi                              ; esi=18900AC0\par
+0067310C    6A 01           push    1\par
+0067310E    68 01010000     push    101\par
+00673113    FFD2            call    edx                              ; 00742860 \'ce\'ca\'b1\'b3\'b0\'fc\'d6\'d0\'b4\'f2\'bf\'aa\'cf\'e4\'d7\'d3\par
+00673115    5F              pop     edi\par
+00673116    B0 01           mov     al, 1\par
+00673118    5E              pop     esi\par
+00673119    C2 1400         retn    14\par
+0067311C    8B06            mov     eax, dword ptr [esi]\par
+0067311E    D9C9            fxch    st(1)\par
+00673120    8B90 84000000   mov     edx, dword ptr [eax+84]\par
+00673126    83EC 08         sub     esp, 8\par
+00673129    D95C24 04       fstp    dword ptr [esp+4]\par
+0067312D    D91C24          fstp    dword ptr [esp]\par
+00673130    FFD2            call    edx\par
+00673132    84C0            test    al, al\par
+00673134    74 37           je      short 0067316D\par
+00673136    A1 A8C8C000     mov     eax, dword ptr [C0C8A8]\par
+0067313B    80B8 340B0000 0>cmp     byte ptr [eax+B34], 0\par
+00673142    74 29           je      short 0067316D\par
+00673144    FF15 C4C4A500   call    dword ptr [<&USER32.GetCapture>] ; USER32.GetCapture\par
+0067314A    85C0            test    eax, eax\par
+0067314C    75 1F           jnz     short 0067316D\par
+0067314E    3886 EA020000   cmp     byte ptr [esi+2EA], al\par
+00673154    74 17           je      short 0067316D\par
+00673156    D94424 14       fld     dword ptr [esp+14]\par
+0067315A    83EC 08         sub     esp, 8\par
+0067315D    D95C24 04       fstp    dword ptr [esp+4]\par
+00673161    D94424 18       fld     dword ptr [esp+18]\par
+00673165    D91C24          fstp    dword ptr [esp]\par
+00673168    E8 63030000     call    006734D0\par
+0067316D    D94424 14       fld     dword ptr [esp+14]\par
+00673171    D94424 10       fld     dword ptr [esp+10]\par
+00673175    EB 5C           jmp     short 006731D3\par
+00673177    8B16            mov     edx, dword ptr [esi]\par
+00673179    D9C9            fxch    st(1)\par
+0067317B    8B82 84000000   mov     eax, dword ptr [edx+84]\par
+00673181    83EC 08         sub     esp, 8\par
+00673184    D95C24 04       fstp    dword ptr [esp+4]\par
+00673188    D91C24          fstp    dword ptr [esp]\par
+0067318B    FFD0            call    eax\par
+0067318D    84C0            test    al, al\par
+0067318F    74 2C           je      short 006731BD\par
+00673191    8B8E 34010000   mov     ecx, dword ptr [esi+134]\par
+00673197    C646 08 01      mov     byte ptr [esi+8], 1\par
+0067319B    8B51 2C         mov     edx, dword ptr [ecx+2C]\par
+0067319E    52              push    edx\par
+0067319F    FF15 DCC3A500   call    dword ptr [<&USER32.SetCapture>] ; USER32.SetCapture\par
+006731A5    807E 06 00      cmp     byte ptr [esi+6], 0\par
+006731A9  ^ 0F85 66FFFFFF   jnz     00673115\par
+006731AF    8BC6            mov     eax, esi\par
+006731B1    E8 4A752000     call    0087A700\par
+006731B6    5F              pop     edi\par
+006731B7    B0 01           mov     al, 1\par
+006731B9    5E              pop     esi\par
+006731BA    C2 1400         retn    14\par
+006731BD    D94424 10       fld     dword ptr [esp+10]\par
+006731C1    D996 14020000   fst     dword ptr [esi+214]\par
+006731C7    D94424 14       fld     dword ptr [esp+14]\par
+006731CB    D996 18020000   fst     dword ptr [esi+218]\par
+006731D1    D9C9            fxch    st(1)\par
+006731D3    8B4424 1C       mov     eax, dword ptr [esp+1C]\par
+006731D7    D9C9            fxch    st(1)\par
+006731D9    8B4C24 18       mov     ecx, dword ptr [esp+18]\par
+006731DD    50              push    eax\par
+006731DE    51              push    ecx\par
+006731DF    83EC 08         sub     esp, 8\par
+006731E2    D95C24 04       fstp    dword ptr [esp+4]\par
+006731E6    8BCE            mov     ecx, esi\par
+006731E8    D91C24          fstp    dword ptr [esp]\par
+006731EB    57              push    edi\par
+006731EC    E8 9F072300     call    008A3990\par
+006731F1    5F              pop     edi\par
+006731F2    5E              pop     esi\par
+006731F3    C2 1400         retn    14\par
+006731F6    807E 08 00      cmp     byte ptr [esi+8], 0\par
+006731FA  ^ 74 D7           je      short 006731D3\par
+006731FC    DDD9            fstp    st(1)\par
+006731FE    C646 08 00      mov     byte ptr [esi+8], 0\par
+00673202    DDD8            fstp    st\par
+00673204    FF15 D0C3A500   call    dword ptr [<&USER32.ReleaseCaptu>; USER32.ReleaseCapture\par
+0067320A    D94424 14       fld     dword ptr [esp+14]\par
+0067320E    8B06            mov     eax, dword ptr [esi]\par
+00673210    8B90 84000000   mov     edx, dword ptr [eax+84]\par
+00673216    83EC 08         sub     esp, 8\par
+00673219    D95C24 04       fstp    dword ptr [esp+4]\par
+0067321D    8BCE            mov     ecx, esi\par
+0067321F    D94424 18       fld     dword ptr [esp+18]\par
+00673223    D91C24          fstp    dword ptr [esp]\par
+00673226    FFD2            call    edx\par
+00673228    84C0            test    al, al\par
+0067322A  ^ 0F84 E5FEFFFF   je      00673115\par
+00673230  ^ E9 C0FEFFFF     jmp     006730F5\par
+00673235    32C0            xor     al, al\par
+00673237    5E              pop     esi\par
+00673238    C2 1400         retn    14\par
+0067323B    90              nop\par
+0067323C    1C 31           sbb     al, 31\par
+0067323E    67:00CA         add     dl, cl\par
+00673241    3067 00         xor     byte ptr [edi], ah\par
+00673244    1C 31           sbb     al, 31\par
+00673246    67:00D3         add     bl, dl\par
+00673249    3167 00         xor     dword ptr [edi], esp\par
+0067324C    77 31           ja      short 0067327F\par
+0067324E    67:00F6         add     dh, dh\par
+00673251    3167 00         xor     dword ptr [edi], esp\par
+\par
+\par
+\par
+\par
+\lang1033\f1\fs18 push 205\par
+push 18900AC0 \tab\tab //\lang2052\f0\'d5\'e2\'b8\'f6\'d3\'a6\'b8\'c3\'be\'cd\'ca\'c7\'b1\'b3\'b0\'fc\'d6\'d0\'b5\'c4\'d6\'b8\'d5\'eb\'a1\'a3\lang1033\f1\par
+push 1\par
+push 101\par
+mov ecx,189005E0\par
+call 00742860\lang2052\f0\fs20\par
+}
+ 

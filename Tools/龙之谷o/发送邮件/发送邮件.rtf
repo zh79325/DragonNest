@@ -1,0 +1,162 @@
+{\rtf1\ansi\ansicpg936\deff0\deflang1033\deflangfe2052{\fonttbl{\f0\fmodern\fprq6\fcharset134 \'cb\'ce\'cc\'e5;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\lang2052\f0\fs20 004C3130    83EC 70         sub     esp, 70\par
+004C3133    53              push    ebx\par
+004C3134    55              push    ebp\par
+004C3135    56              push    esi\par
+004C3136    57              push    edi\par
+004C3137    8BF8            mov     edi, eax\par
+004C3139    8B8424 84000000 mov     eax, dword ptr [esp+84]\par
+004C3140    E8 9BFFFFFF     call    004C30E0\par
+004C3145    84C0            test    al, al\par
+004C3147    0F85 D9000000   jnz     004C3226\par
+004C314D    33C0            xor     eax, eax\par
+004C314F    33DB            xor     ebx, ebx\par
+004C3151    894424 18       mov     dword ptr [esp+18], eax\par
+004C3155    884424 1C       mov     byte ptr [esp+1C], al\par
+004C3159    33ED            xor     ebp, ebp\par
+004C315B    895C24 14       mov     dword ptr [esp+14], ebx\par
+004C315F    8D7424 1C       lea     esi, dword ptr [esp+1C]\par
+004C3163    8B47 68         mov     eax, dword ptr [edi+68]\par
+004C3166    85C0            test    eax, eax\par
+004C3168    74 1A           je      short 004C3184\par
+004C316A    8B4F 6C         mov     ecx, dword ptr [edi+6C]\par
+004C316D    2BC8            sub     ecx, eax\par
+004C316F    B8 ABAAAA2A     mov     eax, 2AAAAAAB\par
+004C3174    F7E9            imul    ecx\par
+004C3176    C1FA 02         sar     edx, 2\par
+004C3179    8BC2            mov     eax, edx\par
+004C317B    C1E8 1F         shr     eax, 1F\par
+004C317E    03C2            add     eax, edx\par
+004C3180    3BE8            cmp     ebp, eax\par
+004C3182    72 05           jb      short 004C3189\par
+004C3184    E8 13A05200     call    009ED19C\par
+004C3189    8B47 68         mov     eax, dword ptr [edi+68]\par
+004C318C    8B0C18          mov     ecx, dword ptr [eax+ebx]\par
+004C318F    03C3            add     eax, ebx\par
+004C3191    83F9 FF         cmp     ecx, -1\par
+004C3194    74 22           je      short 004C31B8\par
+004C3196    8B50 08         mov     edx, dword ptr [eax+8]\par
+004C3199    834424 14 01    add     dword ptr [esp+14], 1\par
+004C319E    894E FC         mov     dword ptr [esi-4], ecx\par
+004C31A1    8B48 04         mov     ecx, dword ptr [eax+4]\par
+004C31A4    890E            mov     dword ptr [esi], ecx\par
+004C31A6    8B48 10         mov     ecx, dword ptr [eax+10]\par
+004C31A9    8956 04         mov     dword ptr [esi+4], edx\par
+004C31AC    8B50 14         mov     edx, dword ptr [eax+14]\par
+004C31AF    894E 08         mov     dword ptr [esi+8], ecx\par
+004C31B2    8956 0C         mov     dword ptr [esi+C], edx\par
+004C31B5    83C6 14         add     esi, 14\par
+004C31B8    83C3 18         add     ebx, 18\par
+004C31BB    83C5 01         add     ebp, 1\par
+004C31BE    83FB 78         cmp     ebx, 78\par
+004C31C1  ^ 7C A0           jl      short 004C3163\par
+004C31C3    BA 08000000     mov     edx, 8\par
+004C31C8    3957 50         cmp     dword ptr [edi+50], edx\par
+004C31CB    72 05           jb      short 004C31D2\par
+004C31CD    8B47 3C         mov     eax, dword ptr [edi+3C]\par
+004C31D0    EB 03           jmp     short 004C31D5\par
+004C31D2    8D47 3C         lea     eax, dword ptr [edi+3C]\par
+004C31D5    3957 34         cmp     dword ptr [edi+34], edx\par
+004C31D8    72 05           jb      short 004C31DF\par
+004C31DA    8B4F 20         mov     ecx, dword ptr [edi+20]\par
+004C31DD    EB 03           jmp     short 004C31E2\par
+004C31DF    8D4F 20         lea     ecx, dword ptr [edi+20]\par
+004C31E2    3957 18         cmp     dword ptr [edi+18], edx\par
+004C31E5    72 05           jb      short 004C31EC\par
+004C31E7    8B77 04         mov     esi, dword ptr [edi+4]\par
+004C31EA    EB 03           jmp     short 004C31EF\par
+004C31EC    8D77 04         lea     esi, dword ptr [edi+4]\par
+004C31EF    8D5424 18       lea     edx, dword ptr [esp+18]\par
+004C31F3    52              push    edx\par
+004C31F4    8B5424 18       mov     edx, dword ptr [esp+18]\par
+004C31F8    52              push    edx\par
+004C31F9    0FB657 74       movzx   edx, byte ptr [edi+74]\par
+004C31FD    52              push    edx\par
+004C31FE    8B57 58         mov     edx, dword ptr [edi+58]\par
+004C3201    52              push    edx\par
+004C3202    50              push    eax\par
+004C3203    E8 48FAFFFF     call    004C2C50                         ; \'b7\'a2\'cb\'cd\'d3\'ca\'bc\'fe\par
+004C3208    8B8424 98000000 mov     eax, dword ptr [esp+98]\par
+004C320F    8B78 24         mov     edi, dword ptr [eax+24]\par
+004C3212    83C4 14         add     esp, 14\par
+004C3215    85FF            test    edi, edi\par
+004C3217    74 0D           je      short 004C3226\par
+004C3219    807F 28 00      cmp     byte ptr [edi+28], 0\par
+004C321D    74 07           je      short 004C3226\par
+004C321F    B1 01           mov     cl, 1\par
+004C3221    E8 5A9D2B00     call    0077CF80\par
+004C3226    5F              pop     edi\par
+004C3227    5E              pop     esi\par
+004C3228    5D              pop     ebp\par
+004C3229    5B              pop     ebx\par
+004C322A    83C4 70         add     esp, 70\par
+004C322D    C2 0400         retn    4\par
+\par
+\par
+\par
+\par
+004C2C50    81EC 64020000   sub     esp, 264\par
+004C2C56    A1 E0C5B400     mov     eax, dword ptr [B4C5E0]\par
+004C2C5B    33C4            xor     eax, esp\par
+004C2C5D    898424 60020000 mov     dword ptr [esp+260], eax\par
+004C2C64    8B8424 78020000 mov     eax, dword ptr [esp+278]\par
+004C2C6B    53              push    ebx\par
+004C2C6C    8B9C24 78020000 mov     ebx, dword ptr [esp+278]\par
+004C2C73    55              push    ebp\par
+004C2C74    8BAC24 70020000 mov     ebp, dword ptr [esp+270]\par
+004C2C7B    57              push    edi\par
+004C2C7C    68 54020000     push    254\par
+004C2C81    8BF9            mov     edi, ecx\par
+004C2C83    8D4C24 14       lea     ecx, dword ptr [esp+14]\par
+004C2C87    6A 00           push    0\par
+004C2C89    51              push    ecx\par
+004C2C8A    894424 18       mov     dword ptr [esp+18], eax\par
+004C2C8E    E8 FD9A5300     call    009FC790\par
+004C2C93    83C4 0C         add     esp, 0C\par
+004C2C96    56              push    esi\par
+004C2C97    8D5424 14       lea     edx, dword ptr [esp+14]\par
+004C2C9B    6A 11           push    11\par
+004C2C9D    52              push    edx\par
+004C2C9E    E8 21A65200     call    009ED2C4\par
+004C2CA3    83C4 0C         add     esp, 0C\par
+004C2CA6    57              push    edi\par
+004C2CA7    8D4424 36       lea     eax, dword ptr [esp+36]\par
+004C2CAB    6A 1E           push    1E\par
+004C2CAD    50              push    eax\par
+004C2CAE    E8 11A65200     call    009ED2C4\par
+004C2CB3    83C4 0C         add     esp, 0C\par
+004C2CB6    55              push    ebp\par
+004C2CB7    8D4C24 72       lea     ecx, dword ptr [esp+72]\par
+004C2CBB    68 C6000000     push    0C6\par
+004C2CC0    51              push    ecx\par
+004C2CC1    E8 FEA55200     call    009ED2C4\par
+004C2CC6    8B9424 84020000 mov     edx, dword ptr [esp+284]\par
+004C2CCD    8A8424 88020000 mov     al, byte ptr [esp+288]\par
+004C2CD4    8D0C9B          lea     ecx, dword ptr [ebx+ebx*4]\par
+004C2CD7    03C9            add     ecx, ecx\par
+004C2CD9    83C4 0C         add     esp, 0C\par
+004C2CDC    03C9            add     ecx, ecx\par
+004C2CDE    899424 FB010000 mov     dword ptr [esp+1FB], edx\par
+004C2CE5    8B5424 0C       mov     edx, dword ptr [esp+C]\par
+004C2CE9    51              push    ecx\par
+004C2CEA    888424 FE010000 mov     byte ptr [esp+1FE], al\par
+004C2CF1    52              push    edx\par
+004C2CF2    8D8424 08020000 lea     eax, dword ptr [esp+208]\par
+004C2CF9    50              push    eax\par
+004C2CFA    E8 B1355300     call    009F62B0\par
+004C2CFF    8B3D 28C8C000   mov     edi, dword ptr [C0C828]\par
+004C2D05    83C4 0C         add     esp, 0C\par
+004C2D08    6A 00           push    0\par
+004C2D0A    6A 02           push    2\par
+004C2D0C    8D4C24 18       lea     ecx, dword ptr [esp+18]\par
+004C2D10    0FBEC3          movsx   eax, bl\par
+004C2D13    51              push    ecx                              ; ecx=0012E324, (UNICODE "3243423432")\par
+004C2D14    8D0480          lea     eax, dword ptr [eax+eax*4]\par
+004C2D17    6A 05           push    5\par
+004C2D19    8D0485 F0010000 lea     eax, dword ptr [eax*4+1F0]       ; 000001F0\par
+004C2D20    6A 0E           push    0E\par
+004C2D22    889C24 13020000 mov     byte ptr [esp+213], bl\par
+004C2D29    E8 62563A00     call    00868390\par
+\par
+}
+ 
