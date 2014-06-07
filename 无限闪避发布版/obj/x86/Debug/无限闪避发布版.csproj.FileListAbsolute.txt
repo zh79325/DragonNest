@@ -24,3 +24,6 @@ D:\admin\desktop\dn\hook1\无限闪避发布版\obj\x86\Debug\无限闪避.Prope
 D:\admin\desktop\dn\hook1\无限闪避发布版\obj\x86\Debug\无限闪避.自定义飞行点.resources
 D:\admin\desktop\dn\hook1\无限闪避发布版\obj\x86\Debug\无限闪避发布版.csproj.GenerateResource.Cache
 D:\admin\desktop\dn\hook1\无限闪避发布版\obj\x86\Debug\无限闪避发布版.csprojResolveAssemblyReference.cache
+D:\admin\desktop\DragonNest\无限闪避发布版\bin\Debug\无限闪避.exe.config
+D:\admin\desktop\DragonNest\无限闪避发布版\obj\x86\Debug\无限闪避.exe
+D:\admin\desktop\DragonNest\无限闪避发布版\obj\x86\Debug\无限闪避.pdb

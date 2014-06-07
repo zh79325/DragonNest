@@ -1,0 +1,10 @@
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\admin\desktop\DragonNest\Tools\dntfile\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Search.resources
